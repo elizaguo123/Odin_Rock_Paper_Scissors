@@ -1,3 +1,10 @@
+function game(playRound)
+{
+
+    for (let i = 0; i < 5; i++)
+}
+
+
 function playRound(playerSelction, computerSelection) {
 // my code goes here
 //ask for playerSelection input
@@ -5,21 +12,23 @@ function playRound(playerSelction, computerSelection) {
 //if computer plays same as player, ask for player input again
 //if rock vs paper, then paper wins
 //if rock vs scissors, then rock wins
+let playerSelection = prompt("rock, paper, scissors?");
+
 if 
-(playerSelection = "rock" && computerSelection = "rock"
+(playerSelection == "rock" && computerSelection == "rock"
 ||
-playerSelection = "paper" && computerSelection = "paper"
+playerSelection == "paper" && computerSelection == "paper"
 ||
-playerSelection = "scissors" && computerSelection = "scissors")
+playerSelection == "scissors" && computerSelection == "scissors")
 {
-    return ("It's a tie! Rematch!")
+    return ("It's a tie! Rematch!");
 } 
 
-if (playerSelection = "rock" && computerSelection = "paper"
+if (playerSelection == "rock" && computerSelection == "paper"
 ||
 playerSelection = "paper" && computerSelection = "scissors"
 ||
-playerSelction = "scissors" && computerSelection = "rock")
+playerSelection = "scissors" && computerSelection = "rock")
 {
 return ("You Lose! Try Again!")
 }
